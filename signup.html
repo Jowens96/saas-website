@@ -4,20 +4,34 @@
   <meta charset="utf-8">
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <h1><img src="" alt=""></h1>
-    <img src="" alt="">
-    <button type="button" name="signup"></button>
-    <nav>
-      <li> <a href="#"></a>Home</li>
-      <li> <a href="#"></a>Tour</li>
-      <li> <a href="#"></a>Pricing</li>
-      <li class="current"> <a href="#"></a>Sign-up</li>
-    </nav>
+    <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
+
+    <div class="media inline">
+      <div class="media-img pad-t push-r right">
+          <a href="signup.html"><img class="icon i-32" src="images/header/profile-icon.png" alt=""></a>
+        <a href="signup.html" class="signup micro">Sign-up</a>
+      </div>
+    </div>
+
+    <div class="nav-bg island-1-8 unit-content-center-horizontal">
+      <nav class="list-group">
+        <li> <a class="island-1-8" href="index.html">Home</a></li>
+        <li> <a class="island-1-8" href="tour.html">Tour</a></li>
+        <li> <a class="island-1-8" href="pricing.html">Pricing</a></li>
+        <li> <a class="island-1-8 current" href="signup.html">Sign-up</a></li>
+      </nav>
+    </div>
+
   </header>
 
   <section>
@@ -89,13 +103,15 @@
   </section>
 
   <footer>
-    <div class="social">
-      <img src="" alt=""> <a href="#"></a>
-      <img src="" alt=""> <a href="#"></a>
-      <img src="" alt=""> <a href="#"></a>
+    <div class="social inline island-1-2 ">
+      <a href="https://www.facebook.com/Marketo" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/marketo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/marketoinc/?hl=en" class="fa fa-instagram"></a>
     </div>
 
-    <p class="small">2018, Marketo Inc.</p>
+    <div class="footerpdiv push-none">
+      <p class="micro pad-b">2018, Marketo Inc.</p>
+    </div>
 
   </footer>
 
