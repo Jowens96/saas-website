@@ -13,17 +13,11 @@ header {
   max-width: 130px;
 }
 
-.nav-bg nav {
-  position: relative;
+.nav-bg {
   background-color: #716FB3;
 }
 
-nav {
-  position: absolute;
-  bottom: .4em;
-}
-
-  nav li {
+nav li {
   display:inline-block;
   margin-right: 1px;
 }
@@ -72,6 +66,7 @@ button:hover {
 
 .banner-text-wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .banner-text {
@@ -92,8 +87,22 @@ button {
 
 footer {
   background-color: #8A99A6;
+  height: 1.5em;
+}
+
+.footerpdiv {
+  position: relative;
 }
 
 footer p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa {
   color: #fff;
 }
