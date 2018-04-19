@@ -52,14 +52,26 @@ button:hover {
   background-color: #707070;
 }
 
+.banner-text p, h2 {
+  background-color: #fff;
+  padding: .3em;
+  border-radius: 20px;
+}
+
 .banner-text-wrap {
   position: relative;
 }
 
 .banner-text {
-  background-color: rgba(#ffffff, 1);
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  position: absolute;
+  top: 105%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
