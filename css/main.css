@@ -87,46 +87,42 @@ button:hover {
 .banner-text {
   background-color: rgba(255,255,255,.9);
 }
-/*
-.banner-text-wrap {
-  position: relative;
-}
 
-
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
-
-/* CARDS */
+/* product CARDS */
 
 
 /** FOOTER **/
 
 footer {
   background-color: #8A99A6;
-  height: 1.5em;
+
 }
 
-.footerpdiv {
-  position: relative;
-}
+
 
 footer p {
   color: #fff;
-  text-align: center;
-  margin: 0;
+
+  /*
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: -.1em;
+  left: 10em;
+  */
 }
+
+
+.footer-sm,
+.footer-p {
+  text-align: center;
+}
+
 
 .fa {
   color: #fff;
 }
+
+
+
 
 /* 400px */
 @media only screen and (min-width: 25em) {
@@ -135,6 +131,14 @@ footer p {
 
 /* 650px */
 @media only screen and (min-width: 38em) {
+  .footer-p {
+     text-align: right;
+   }
+
+  .footer-sm {
+     text-align: left;
+   }
+
 
 }
 
@@ -147,6 +151,7 @@ footer p {
     margin: 0 auto;
     margin-top: 1em;
   }
+
 
 }
 
