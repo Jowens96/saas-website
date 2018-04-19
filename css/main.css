@@ -6,14 +6,38 @@ body {
 
 header {
   background-color: #EDEDED;
+  height: 5.5em;
 }
 
 .logo {
   max-width: 130px;
 }
 
-.nav-bg {
-  background-color: rgba(#716fb3, 0.53);
+.nav-bg nav {
+  position: relative;
+  background-color: #716FB3;
+}
+
+nav {
+  position: absolute;
+  bottom: .4em;
+}
+
+  nav li {
+  display:inline-block;
+  margin-right: 1px;
+}
+
+nav a {
+  color: #455560;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .current {
+  text-decoration: underline;
 }
 
 h2 {
@@ -29,18 +53,6 @@ button {
 
 a {
   text-decoration: none;
-}
-
-nav a {
-  color: #455560;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav .current {
-  text-decoration: underline;
 }
 
 button a {
