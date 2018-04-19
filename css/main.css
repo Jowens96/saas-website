@@ -2,7 +2,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-/** HEADER AND BANNER **/
+/** HEADER**/
 
 header {
   background-color: #EDEDED;
@@ -11,6 +11,10 @@ header {
 
 .logo {
   max-width: 130px;
+}
+
+.signup {
+  color: #707070;
 }
 
 .nav-bg {
@@ -23,7 +27,7 @@ nav li {
 }
 
 nav a {
-  color: #455560;
+  color: #fff;
 }
 
 nav a:hover {
@@ -33,6 +37,8 @@ nav a:hover {
 nav .current {
   text-decoration: underline;
 }
+
+/* BANNER */
 
 h2 {
   color: #716FB3;
@@ -83,6 +89,9 @@ button {
   transform: translate(-50%, -50%);
 }
 
+/* CARDS */
+
+
 /** FOOTER **/
 
 footer {
@@ -105,4 +114,27 @@ footer p {
 
 .fa {
   color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+  .review {
+    overflow: hidden;
+  }
+
+  .review img {
+    float: left;
+    margin-left: 3em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .review img {
+    float: none;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 1em;
+  }
+
 }
