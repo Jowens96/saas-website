@@ -44,11 +44,24 @@ h2 {
   color: #716FB3;
 }
 
+/* .button-wrap {
+  position: relative;
+} */
+
 button {
   background-color: #716FB3;
   color: white;
   border-style: none;
   border-radius: 20px;
+  /* position: absolute;
+  bottom: -3em;
+  right: 23em; */
+  /*
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
 }
 
 a {
@@ -64,16 +77,21 @@ button:hover {
   background-color: #707070;
 }
 
-.banner-text p, h2 {
-  background-color: #fff;
-  padding: .3em;
-  border-radius: 20px;
+.banner-bg {
+  background-image: url(../images/banner/home_1280x853crop.jpg);
+  background-size: cover;
+  height: 20em;
+  background-position: center center;
 }
 
+.banner-text {
+  background-color: rgba(255,255,255,.9);
+}
+/*
 .banner-text-wrap {
   position: relative;
-  overflow: hidden;
 }
+
 
 .banner-text {
   position: absolute;
@@ -81,13 +99,7 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-button {
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+*/
 
 /* CARDS */
 
