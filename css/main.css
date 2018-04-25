@@ -97,6 +97,7 @@ table {
 
 .darkblue {
   background-color: #8A99A6;
+  color: #fff;
 
 }
 
@@ -138,13 +139,6 @@ footer p {
 .footer-p {
   text-align: center;
 }
-
-
-.fa {
-  color: #fff;
-}
-
-
 
 
 /* 400px */
