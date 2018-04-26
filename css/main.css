@@ -14,7 +14,7 @@ header {
 }
 
 .signup {
-  color: #707070;
+  color: #46555F;
 }
 
 .nav-bg {
@@ -118,7 +118,7 @@ tbody tr:nth-child(odd) {
 /** FOOTER **/
 
 footer {
-  background-color: #8A99A6;
+  background-color: #46555F;
 
 }
 
@@ -140,7 +140,6 @@ footer p {
   text-align: center;
 }
 
-
 /* 400px */
 @media only screen and (min-width: 25em) {
 
@@ -155,7 +154,6 @@ footer p {
   .footer-sm {
      text-align: left;
    }
-
 
 }
 

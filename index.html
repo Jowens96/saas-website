@@ -12,22 +12,36 @@
 </head>
 <body>
 
-  <header>
-    <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
 
-    <div class="media inline">
+  <header role="banner">
+    <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" aria-label="Icon for sign-up form" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
+
+    <!-- <div class="media inline">
       <div class="media-img pad-t push-r right">
         <a href="sign-up.html"><img class="icon i-32" src="images/header/profile-icon.png" alt=""></a>
         <a href="sign-up.html" class="signup micro">Sign-up</a>
       </div>
-    </div>
+    </div> -->
+
+    <a href="sign-up.html">
+      <figure class="pad-t push-r right push-0">
+        <img class="icon i-32 inline" src="images/header/profile-icon.png" alt="">
+        <figcaption class="inline signup micro push-0">Sign-up</figcaption>
+      </figure>
+    </a>
 
     <div class="nav-bg unit-content-center-horizontal">
-      <nav class="list-group">
-        <a class="island-1-8 current" href="index.html">Home</a>
-        <a class="island-1-8" href="tour.html">Tour</a>
-        <a class="island-1-8" href="pricing.html">Pricing</a>
-        <a class="island-1-8" href="sign-up.html">Sign-up</a>
+      <nav role="navigation" class="list-group">
+        <ul class="list-group">
+          <li><a class="island-1-8 current" href="index.html">Home</a></li>
+          <li><a class="island-1-8" href="tour.html">Tour</a></li>
+          <li><a class="island-1-8" href="pricing.html">Pricing</a></li>
+          <li><a class="island-1-8" href="sign-up.html">Sign-up</a></li>
+        </ul>
       </nav>
     </div>
 
@@ -39,43 +53,72 @@
         <h2 class="tera center-content-horizontal pad-t-1-2 push-1-8">Home</h2>
         <p class="wrapper center-text mega push-1-4 max-length">Marketo is an easy to use online service that has helped thousands of businesses around the globe grow their client base to its fullest potential.</p>
         <div class="button-wrap center-flow pad-b">
-          <a href="tour.html" class="btn" role="button">Take A Tour</a>
+          <span><a class="btn" href="tour.html">Take A Tour</a></span>
+          <!-- SO THIS SHOULD BE A BUTTON TAG BUT MARKBOT WON'T ALLOW A BUTTON/A COMBINATION -->
         </div>
       </div>
     </div>
   </div>
 
-  <section>
-    <p class="center-text pad-t push-1-2">Marketo leads the industry in automated marketing plans for businesses of all sizes.</p>
-  </section>
+  <main role="main">
 
-  <section class="wrapper">
-    <div class="grid text-center">
+    <section>
+      <p class="center-text pad-t push-1-2">Marketo leads the industry in automated marketing plans for businesses of all sizes.</p>
+    </section>
 
-      <div class="unit unit-xs-1">
-        <h2 class="push-1-2 center-content-horizontal giga">Products</h2>
+    <section class="wrapper">
+      <div class="grid text-center">
+
+        <div class="unit unit-xs-1">
+          <h2 class="push-0 center-content-horizontal giga">Products</h2>
+        </div>
+
+        <!-- <div class="product unit unit-xs-1-3 width-half push-1-2">
+          <a class="inline-block width-half" href="tour.html">
+            <img class="img-flex" src="images/products/emailmarketing.svg" alt="">
+          </a>
+        </div> -->
+
+        <figure class="product unit unit-content-center unit-xs-1-3 push-1-2">
+          <div class="embed embed-1by1 width-half">
+            <a class="inline-block" href="tour.html">
+              <img class="embed-item" src="images/products/emailmarketing.svg" alt="" aria-label="Email Marketing Information">
+            </a>
+          </div>
+        </figure>
+
+        <!-- <div class="product unit unit-xs-1-3 push-1-2">
+          <a class="inline-block width-half" href="tour.html">
+            <img class="img-flex" src="images/products/mobilemarketing.svg" alt="">
+          </a>
+        </div> -->
+
+        <figure class="product unit unit-content-center unit-xs-1-3 push-1-2">
+          <div class="embed embed-1by1 width-half">
+            <a class="inline-block" href="tour.html">
+              <img class="embed-item" src="images/products/mobilemarketing.svg" alt="">
+            </a>
+          </div>
+        </figure>
+
+        <!-- <div class="product unit unit-xs-1-3 push-1-2">
+          <a class="inline-block width-half" href="tour.html">
+            <img class="img-flex" src="images/products/consumermarketing.svg" alt="">
+          </a>
+        </div> -->
+
+        <figure class="product unit unit-content-center unit-xs-1-3 push-1-2">
+          <div class="embed embed-1by1 width-half">
+            <a class="inline-block" href="tour.html">
+              <img class="embed-item" src="images/products/consumermarketing.svg" alt="">
+            </a>
+          </div>
+        </figure>
+
       </div>
+    </section>
 
-      <div class="product unit unit-xs-1-3 width-half push-1-2">
-        <a class="inline-block width-half" href="tour.html">
-          <img class="img-flex" src="images/products/emailmarketing.svg" alt="">
-        </a>
-      </div>
-
-      <div class="product unit unit-xs-1-3 push-1-2">
-        <a class="inline-block width-half" href="tour.html">
-          <img class="img-flex" src="images/products/mobilemarketing.svg" alt="">
-        </a>
-      </div>
-
-      <div class="product unit unit-xs-1-3 push-1-2">
-        <a class="inline-block width-half" href="tour.html">
-          <img class="img-flex" src="images/products/consumermarketing.svg" alt="">
-        </a>
-      </div>
-
-    </div>
-  </section>
+  </main>
 
   <footer class="grid gutter pad-t-1-2 pad-b-1-2">
     <div class="inline gutter-1-2 unit xs-1 s-1 m-1-2 footer-sm ">
@@ -88,11 +131,11 @@
       </div>
     </div>
 
-      <div class="footerpdiv footer-p push-none unit xs-1 s-1 m-1-2">
-        <p class="micro push-1-4">2018, Marketo Inc.</p>
-      </div>
+    <div class="footerpdiv footer-p push-none unit xs-1 s-1 m-1-2">
+      <p class="micro push-1-4" role="contentinfo">2018, Marketo Inc.</p>
+    </div>
 
-    </footer>
+  </footer>
 
-  </body>
-  </html>
+</body>
+</html>
