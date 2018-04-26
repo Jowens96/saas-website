@@ -12,7 +12,12 @@
 </head>
 <body>
 
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
     <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
 
     <div class="media inline">
@@ -23,11 +28,13 @@
     </div>
 
     <div class="nav-bg island-1-8 unit-content-center-horizontal">
-      <nav class="list-group">
-        <li> <a class="island-1-8" href="index.html">Home</a></li>
-        <li> <a class="island-1-8" href="tour.html">Tour</a></li>
-        <li> <a class="island-1-8" href="pricing.html">Pricing</a></li>
-        <li> <a class="island-1-8 current" href="sign-up.html">Sign-up</a></li>
+      <nav class="list-group" role="navigation">
+        <ul class="list-group">
+          <li> <a class="island-1-8" href="index.html">Home</a></li>
+          <li> <a class="island-1-8" href="tour.html">Tour</a></li>
+          <li> <a class="island-1-8" href="pricing.html">Pricing</a></li>
+          <li> <a class="island-1-8 current" href="sign-up.html">Sign-up</a></li>
+        </ul>
       </nav>
     </div>
 
@@ -40,15 +47,23 @@
         <p class="wrapper center-text mega push-1-4 max-length">Download a Marketo plan and watch your business soar.</p>
 
         <div class="button-wrap center-flow pad-b">
-          <button type="button" name="tour"><a href="tour.html">View Prices</a></button>
+          <span><a class="btn" href="tour.html">View Prices</a></span>
         </div>
 
       </div>
     </div>
   </div>
 
+  <main role="main" id="main" tabindex="0">
+
+    <figure class="push-0">
+      <div class="embed embed-1by1 hidden">
+        <img class="embed-item" src="placeholder-1by1.svg" alt="">
+      </div>
+    </figure>
+
   <section>
-    <form class="island-2" action="index.html" method="post">
+    <form method="POST" class="island-2" action="https://formspree.io/owen0062@algonquinlive.com">
       <div class="grid">
 
         <div class="unit grid-middle gutter-1-2">
@@ -63,7 +78,7 @@
 
         <div class="unit gutter-1-2">
           <label for="plan">Select Plan</label>
-          <select class="" id="plan" required multiple>
+          <select id="plan" required multiple>
             <option value="">Select a plan</option>
 
             <optgroup label="Lead Management">
@@ -108,6 +123,8 @@
     </form>
   </section>
 
+  </main>
+
   <footer class="grid gutter pad-t-1-2 pad-b-1-2">
     <div class="inline gutter-1-2 unit xs-1 s-1 m-1-2 footer-sm ">
       <div class="social list-group list-group-inline push-0">
@@ -120,7 +137,7 @@
     </div>
 
       <div class="footerpdiv footer-p push-none unit xs-1 s-1 m-1-2">
-        <p class="micro push-1-4">2018, Marketo Inc.</p>
+        <p class="micro push-1-4" role="contentinfo">2018, Marketo Inc.</p>
       </div>
 
     </footer>

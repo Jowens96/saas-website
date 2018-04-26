@@ -20,12 +20,12 @@
   <header role="banner">
     <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
 
-    <div class="media inline">
-      <div class="media-img pad-t push-r right">
-        <a href="sign-up.html"><img class="icon i-32" src="images/header/profile-icon.png" alt=""></a>
-        <a href="sign-up.html" class="signup micro">Sign-up</a>
-      </div>
-    </div>
+    <a href="sign-up.html">
+      <figure class="pad-t push-r right push-0">
+        <img class="icon i-32 inline" src="images/header/profile-icon.png" alt="">
+        <figcaption class="inline signup micro push-0">Sign-up</figcaption>
+      </figure>
+    </a>
 
     <div class="nav-bg island-1-8 unit-content-center-horizontal">
       <nav class="list-group" role="navigation">
@@ -40,70 +40,75 @@
 
   </header>
 
+  <main role="main" id="main" tabindex="0">
 
-    <main role="main" id="main" tabindex="0">
+    <figure class="push-0">
+      <div class="embed embed-1by1 hidden">
+        <img class="embed-item" src="placeholder-1by1.svg" alt="">
+      </div>
+    </figure>
 
+    <div class="banner-bg">
+      <div class="banner-text-wrap pad-t-2">
+        <div class="banner-text">
+          <h2 class="tera center-content-horizontal pad-t-1-2 push-1-8">Pricing</h2>
+          <p class="wrapper center-text mega push-1-4 max-length">Our reasonable prices are accessible to businesses large and small alike</p>
 
-  <div class="banner-bg">
-    <div class="banner-text-wrap pad-t-2">
-      <div class="banner-text">
-        <h2 class="tera center-content-horizontal pad-t-1-2 push-1-8">Pricing</h2>
-        <p class="wrapper center-text mega push-1-4 max-length">Our reasonable prices are accessible to businesses large and small alike</p>
+          <div class="button-wrap center-flow pad-b">
+            <span><a class="btn" href="sign-up.html">Sign-up</a></span>
+          </div>
 
-        <div class="button-wrap center-flow pad-b">
-          <span><a class="btn" href="sign-up.html">Sign-up</a></span>
+        </div>
+      </div>
+    </div>
+
+    <section>
+
+      <div class="tablewrapper scrollable">
+        <table class="push-1-2">
+          <caption class="island-1-2 push-0 text-center">Our softwares to fit your marketing needs.</caption>
+
+          <thead>
+            <tr>
+              <th class="darkblue" scope="col"></th>
+              <th class="darkblue" scope="col">Basic</th>
+              <th class="darkblue" scope="col">Intermediate</th>
+              <th class="darkblue" scope="col">Advanced</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <th scope="row">Email Marketing</th>
+              <td>$1,195</td>
+              <td>$7,195</td>
+              <td>$11,995</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Consumer Marketing</th>
+              <td>$1,995</td>
+              <td>$2,495</td>
+              <td>$3,195</td>
+            </tr>
+
+            <tr>
+              <th scope="row">Mobile Marketing</th>
+              <td>$1,195</td>
+              <td>$7,195</td>
+              <td>$11,995</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+        <div class="button-wrap center-text push-1-2">
+          <span><a class="btn" href="tour.html">Product Details</a></span>
         </div>
 
       </div>
-    </div>
-  </div>
-
-  <div class="tablewrapper scrollable">
-    <table class="push-1-2">
-      <caption class="island-1-2 push-0 text-center">Our softwares to fit your marketing needs.</caption>
-
-      <thead>
-        <tr>
-          <th class="darkblue" scope="col"></th>
-          <th class="darkblue" scope="col">Basic</th>
-          <th class="darkblue" scope="col">Intermediate</th>
-          <th class="darkblue" scope="col">Advanced</th>
-        </tr>
-      </thead>
-      <tbody>
-
-        <tr>
-          <th scope="row">Email Marketing</th>
-          <td>$1,195</td>
-          <td>$7,195</td>
-          <td>$11,995</td>
-        </tr>
-
-        <tr>
-          <th scope="row">Consumer Marketing</th>
-          <td>$1,995</td>
-          <td>$2,495</td>
-          <td>$3,195</td>
-        </tr>
-
-        <tr>
-          <th scope="row">Mobile Marketing</th>
-          <td>$1,195</td>
-          <td>$7,195</td>
-          <td>$11,995</td>
-        </tr>
-
-
-      </tbody>
-
-
-    </table>
-
-    <div class="button-wrap center-text push-1-2">
-      <span><a class="btn" href="tour.html">Product Details</a></span>
-    </div>
-
-  </div>
+    </section>
 
   </main>
 
@@ -111,9 +116,9 @@
     <div class="inline gutter-1-2 unit xs-1 s-1 m-1-2 footer-sm ">
       <div class="social list-group list-group-inline push-0">
         <p class="push-1-4">
-          <a href="https://www.facebook.com/Marketo"> <img class="i-16" src="images/footer/facebook.svg" alt=""> </a>
-          <a href="https://twitter.com/marketo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img class="i-16" src="images/footer/twitter.svg" alt=""> </a>
-          <a href="https://www.instagram.com/marketoinc/?hl=en"> <img class="i-16" src="images/footer/instagram.svg" alt=""> </a>
+          <a href="https://www.facebook.com/Marketo"> <img class="i-16" src="images/footer/facebook.svg" alt="" aria-label="Link to Facebook Page"> </a>
+          <a href="https://twitter.com/marketo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img class="i-16" src="images/footer/twitter.svg" alt="" aria-label="Link to Twitter Page"> </a>
+          <a href="https://www.instagram.com/marketoinc/?hl=en"> <img class="i-16" src="images/footer/instagram.svg" alt="" aria-label="Link to Instagram Page"> </a>
         </p>
       </div>
     </div>
