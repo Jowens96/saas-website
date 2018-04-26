@@ -173,6 +173,10 @@ footer p {
 
 @media only screen and (min-width: 60em) {
 
+  .product {
+    max-width: 15em;
+  }
+
   .tablewrapper {
     overflow: visible;
   }
