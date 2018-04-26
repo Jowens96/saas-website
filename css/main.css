@@ -30,7 +30,9 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-
+  background-color: #46555f;
+  border: 1px solid #46555f;
+  border-radius: 4px;
 }
 
 nav .current {
@@ -125,17 +127,14 @@ tbody tr:nth-child(odd) {
 
 input[type="checkbox"]:checked ~ .email,
 input[type="checkbox"]:checked ~ .mobile,
-input[type="checkbox"]:checked ~ .consumer
+input[type="checkbox"]:checked ~ .consumer {
 
- {
   display: block;
 }
 
 fieldset {
   border-top: none;
 }
-
-
 
 /** FOOTER **/
 
@@ -145,12 +144,6 @@ footer {
 
 footer p {
   color: #fff;
-
-  /*
-  position: absolute;
-  bottom: -.1em;
-  left: 10em;
-  */
 }
 
 .footer-sm,
