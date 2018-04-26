@@ -30,6 +30,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+
 }
 
 nav .current {
@@ -77,7 +78,7 @@ button:hover {
 }
 
 .banner-bg {
-  background-image: url(../images/banner/architecture-cropped.jpg);
+  background-image: url("../images/banner/architecture-cropped.jpg");
   background-size: cover;
   height: 20em;
   background-position: center center;
@@ -113,6 +114,28 @@ tbody tr:nth-child(odd) {
 .review-section {
   background-color: #ededed;
 }
+
+/* SIGNUP FORM */
+
+.email,
+.mobile,
+.consumer {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .email,
+input[type="checkbox"]:checked ~ .mobile,
+input[type="checkbox"]:checked ~ .consumer
+
+ {
+  display: block;
+}
+
+fieldset {
+  border-top: none;
+}
+
+
 
 /** FOOTER **/
 

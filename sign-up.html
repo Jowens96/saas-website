@@ -20,15 +20,19 @@
   <header role="banner">
     <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
 
-    <div class="media inline">
-      <div class="media-img pad-t push-r right">
-          <a href="sign-up.html"><img class="icon i-32" src="images/header/profile-icon.png" alt=""></a>
-        <a href="sign-up.html" class="signup micro">Sign-up</a>
+
+
+      <div class="right pad-top push-0 push-r">
+        <a href="sign-up.html">
+        <img class="icon i-32 inline-block" src="images/header/profile-icon.png" alt="" aria-label="Sign-in Icon">
+        <p class="inline signup micro push-0">Sign-up</p>
+        </a>
       </div>
-    </div>
+
+
 
     <div class="nav-bg island-1-8 unit-content-center-horizontal">
-      <nav class="list-group" role="navigation">
+      <nav id="nav" role="navigation">
         <ul class="list-group">
           <li> <a class="island-1-8" href="index.html">Home</a></li>
           <li> <a class="island-1-8" href="tour.html">Tour</a></li>
@@ -40,21 +44,23 @@
 
   </header>
 
-  <div class="banner-bg">
-    <div class="banner-text-wrap pad-t-2">
-      <div class="banner-text">
-        <h2 class="tera center-content-horizontal pad-t-1-2 push-1-8">Sign-up</h2>
-        <p class="wrapper center-text mega push-1-4 max-length">Download a Marketo plan and watch your business soar.</p>
+  <main role="main" id="main" tabindex="0">
 
-        <div class="button-wrap center-flow pad-b">
-          <span><a class="btn" href="tour.html">View Prices</a></span>
+    <div class="banner-bg">
+      <div class="banner-text-wrap pad-t-2">
+        <div class="banner-text">
+          <h2 class="tera center-content-horizontal pad-t-1-2 push-1-8">Sign-up</h2>
+          <p class="wrapper center-text mega push-1-4 max-length">Download a Marketo plan and watch your business soar.</p>
+
+          <div class="button-wrap center-flow pad-b">
+            <span><a class="btn" href="tour.html">View Prices</a></span>
+          </div>
+
         </div>
-
       </div>
     </div>
-  </div>
 
-  <main role="main" id="main" tabindex="0">
+
 
     <figure class="push-0">
       <div class="embed embed-1by1 hidden">
@@ -62,79 +68,130 @@
       </div>
     </figure>
 
-  <section>
-    <form method="POST" class="island-2" action="https://formspree.io/owen0062@algonquinlive.com">
-      <div class="grid">
+    <section>
+      <form method="POST" class="island-2" action="https://formspree.io/owen0062@algonquinlive.com">
+        <div class="grid">
 
-        <div class="unit grid-middle gutter-1-2">
-          <label for="name">Name</label>
-          <input id="name" name="name" required>
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 grid-middle gutter-1-2">
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
+            <label for="email">Email</label>
+            <input id="email" name="email" required>
+          </div>
+
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
+
+            <fieldset>
+              <legend class="bold pad-t push-1-2 giga">Select Your Plan(s)</legend>
+
+              <div class="grid">
+
+                <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-4">
+
+                  <input type="checkbox" id="emailmarket">
+                  <label for="emailmarket">Email Marketing</label>
+
+                  <fieldset class="push-2 email">
+                  <legend></legend>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="basic" name="emailmarketing">
+                      <label for="basic">Basic</label>
+                    </div>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="intermediate" name="emailmarketing">
+                      <label for="intermediate">Intermediate</label>
+                    </div>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="advanced" name="emailmarketing">
+                      <label for="advanced">Advanced</label>
+                    </div>
+                  </fieldset>
+
+                </div>
+
+                <div class="unit xs-1 s-1 m-1 l-1 pad-t-1-4">
+
+                  <input type="checkbox" id="mobile">
+                  <label for="mobile">Mobile Marketing</label>
+
+                  <fieldset class="push-2 mobile">
+                  <legend></legend>
+                    <div class="block island-1-4">
+                      <input type="radio" id="basic2" name="mobilemarketing">
+                      <label for="basic2">Basic</label>
+                    </div>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="intermediate2" name="mobilemarketing">
+                      <label for="intermediate2">Intermediate</label>
+                    </div>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="advanced2" name="mobilemarketing">
+                      <label for="advanced2">Advanced</label>
+                    </div>
+                  </fieldset>
+
+                </div>
+
+                <div class="unit xs-1 s-1 m-1-2 l-1-2 pad-t-1-4">
+
+                  <input type="checkbox" id="consumer">
+                  <label for="consumer">Consumer Marketing</label>
+
+                  <fieldset class="push-2 consumer">
+                  <legend></legend>
+                    <div class="block island-1-4">
+                      <input type="radio" id="basic3" name="consumermarketing">
+                      <label for="basic3">Basic</label>
+                    </div>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="intermediate3" name="consumermarketing">
+                      <label for="intermediate3">Intermediate</label>
+                    </div>
+
+                    <div class="block island-1-4">
+                      <input type="radio" id="advanced3" name="consumermarketing">
+                      <label for="advanced3">Advanced</label>
+                    </div>
+
+                  </fieldset>
+
+                </div>
+
+
+                          <div class="unit xs-1 s-1 m-1 l-1 pad-t block">
+                            <button type="submit">Submit</button>
+                          </div>
+
+              </div>
+            </fieldset>
+
+          </div>
+
+</div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="grid gutter pad-t-1-2 pad-b-1-2">
+      <div class="inline gutter-1-2 unit xs-1 s-1 m-1-2 footer-sm ">
+        <div class="social list-group list-group-inline push-0">
+          <p class="push-1-4">
+            <a href="https://www.facebook.com/Marketo"> <img class="i-16" src="images/footer/facebook.svg" alt="" aria-label="Link to Facebook Page"> </a>
+            <a href="https://twitter.com/marketo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img class="i-16" src="images/footer/twitter.svg" alt="" aria-label="Link to Twitter Page"> </a>
+            <a href="https://www.instagram.com/marketoinc/?hl=en"> <img class="i-16" src="images/footer/instagram.svg" alt="" aria-label="Link to Instagram Page"> </a>
+          </p>
         </div>
-
-        <div class="unit gutter-1-2">
-          <label for="email">Email</label>
-          <input id="email" name="email" required>
-        </div>
-
-        <div class="unit gutter-1-2">
-          <label for="plan">Select Plan</label>
-          <select id="plan" required multiple>
-            <option value="">Select a plan</option>
-
-            <optgroup label="Lead Management">
-              <option>Basic</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </optgroup>
-
-            <optgroup label="Email Marketing">
-              <option>Basic</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </optgroup>
-
-            <optgroup label="Consumer Marketing">
-              <option>Basic</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </optgroup>
-
-            <optgroup label="Constumer Base Marketing">
-              <option>Basic</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </optgroup>
-
-            <optgroup label="Mobile Marketing">
-              <option>Basic</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </optgroup>
-
-          </select>
-        </div>
-
-        <div class="island">
-          <button type="submit">Submit</button>
-        </div>
-
       </div>
-
-    </form>
-  </section>
-
-  </main>
-
-  <footer class="grid gutter pad-t-1-2 pad-b-1-2">
-    <div class="inline gutter-1-2 unit xs-1 s-1 m-1-2 footer-sm ">
-      <div class="social list-group list-group-inline push-0">
-        <p class="push-1-4">
-          <a href="https://www.facebook.com/Marketo"> <img class="i-16" src="images/footer/facebook.svg" alt=""> </a>
-          <a href="https://twitter.com/marketo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img class="i-16" src="images/footer/twitter.svg" alt=""> </a>
-          <a href="https://www.instagram.com/marketoinc/?hl=en"> <img class="i-16" src="images/footer/instagram.svg" alt=""> </a>
-        </p>
-      </div>
-    </div>
 
       <div class="footerpdiv footer-p push-none unit xs-1 s-1 m-1-2">
         <p class="micro push-1-4" role="contentinfo">2018, Marketo Inc.</p>
@@ -142,5 +199,5 @@
 
     </footer>
 
-</body>
-</html>
+  </body>
+  </html>
