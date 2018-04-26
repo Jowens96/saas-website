@@ -21,7 +21,6 @@ header {
 
 nav li {
   display: inline-block;
-  margin-right: 1px;
 }
 
 nav a {
@@ -174,13 +173,6 @@ footer p {
 /*  980px */
 
 @media only screen and (min-width: 60em) {
-
-  .review img {
-    float: none;
-    max-width: 200px;
-    margin: 0 auto;
-    margin-top: 1em;
-  }
 
   .tablewrapper {
     overflow: visible;
