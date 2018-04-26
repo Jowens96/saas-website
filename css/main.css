@@ -48,7 +48,7 @@ h2 {
   position: relative;
 } */
 
-button {
+button, .btn {
   background-color: #716FB3;
   color: white;
   border-style: none;
@@ -78,7 +78,7 @@ button:hover {
 }
 
 .banner-bg {
-  background-image: url(../images/banner/home_1280x853crop.jpg);
+  background-image: url(../images/banner/architecture-cropped.jpg);
   background-size: cover;
   height: 20em;
   background-position: center center;
