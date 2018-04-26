@@ -1,11 +1,9 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
-/** HEADER**/
-
 header {
-  background-color: #EDEDED;
+  background-color: #ededed;
   height: 5.5em;
 }
 
@@ -14,15 +12,15 @@ header {
 }
 
 .signup {
-  color: #46555F;
+  color: #46555f;
 }
 
 .nav-bg {
-  background-color: #716FB3;
+  background-color: #716fb3;
 }
 
 nav li {
-  display:inline-block;
+  display: inline-block;
   margin-right: 1px;
 }
 
@@ -41,7 +39,7 @@ nav .current {
 /* BANNER */
 
 h2 {
-  color: #716FB3;
+  color: #716fb3;
 }
 
 /* .button-wrap {
@@ -49,10 +47,11 @@ h2 {
 } */
 
 button, .btn {
-  background-color: #716FB3;
+  background-color: #716fb3;
   color: white;
   border-style: none;
   border-radius: 20px;
+
   /* position: absolute;
   bottom: -3em;
   right: 23em; */
@@ -85,7 +84,7 @@ button:hover {
 }
 
 .banner-text {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, .9);
 }
 
 /* Tour Table */
@@ -96,9 +95,8 @@ table {
 }
 
 .darkblue {
-  background-color: #8A99A6;
+  background-color: #46555f;
   color: #fff;
-
 }
 
 td, th {
@@ -111,18 +109,16 @@ tbody tr:nth-child(odd) {
 }
 
 /** TOUR REVIEWS **/
+
 .review-section {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 
 /** FOOTER **/
 
 footer {
-  background-color: #46555F;
-
+  background-color: #46555f;
 }
-
-
 
 footer p {
   color: #fff;
@@ -134,30 +130,33 @@ footer p {
   */
 }
 
-
 .footer-sm,
 .footer-p {
   text-align: center;
 }
 
 /* 400px */
-@media only screen and (min-width: 25em) {
 
-}
+/* @media only screen and (min-width: 25em) {
+
+} */
 
 /* 650px */
+
 @media only screen and (min-width: 38em) {
+
   .footer-p {
-     text-align: right;
-   }
+    text-align: right;
+  }
 
   .footer-sm {
-     text-align: left;
-   }
+    text-align: left;
+  }
 
 }
 
 /*  980px */
+
 @media only screen and (min-width: 60em) {
 
   .review img {
@@ -174,6 +173,7 @@ footer p {
 }
 
 /*  1500px */
-@media only screen and (min-width: 90em) {
 
-}
+/* @media only screen and (min-width: 90em) {
+
+} */

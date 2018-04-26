@@ -8,10 +8,16 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 <body>
 
-  <header>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
     <h1 class="gutter-1-2 inline"><img class="logo pad-t-1-4" src="images/header/marketo-logo.png" alt="marketo-logo"></h1>
 
     <div class="media inline">
@@ -22,11 +28,13 @@
     </div>
 
     <div class="nav-bg island-1-8 unit-content-center-horizontal">
-      <nav class="list-group">
-        <li> <a class="island-1-8" href="index.html">Home</a></li>
-        <li> <a class="island-1-8 current" href="tour.html">Tour</a></li>
-        <li> <a class="island-1-8" href="pricing.html">Pricing</a></li>
-        <li> <a class="island-1-8" href="sign-up.html">Sign-up</a></li>
+      <nav role="navigation">
+        <ul class="list-group">
+          <li> <a class="island-1-8" href="index.html">Home</a></li>
+          <li> <a class="island-1-8 current" href="tour.html">Tour</a></li>
+          <li> <a class="island-1-8" href="pricing.html">Pricing</a></li>
+          <li> <a class="island-1-8" href="sign-up.html">Sign-up</a></li>
+        </ul>
       </nav>
     </div>
 
@@ -38,80 +46,84 @@
         <h2 class="tera center-content-horizontal pad-t-1-2 push-1-8">Tour</h2>
         <p class="wrapper center-text mega push-1-4 max-length">You can give customers the content they want automatically with our artificial intelligence tools.</p>
         <div class="button-wrap center-flow pad-b">
-          <button type="button" name="tour"><a href="#browse">Browse</a></button>
+          <span><a class="btn" href="tour.html">Browse</a></span>
         </div>
       </div>
     </div>
   </div>
 
-  <a name="browse"></a>
-  <div class="tablewrapper scrollable">
-    <table class="push-1-2">
-      <caption class="island-1-2 push-0 text-center">Details about our tried and tested programs.</caption>
+  <main role="main" id="main" tabindex="0">
 
-      <thead>
-        <tr>
-          <th class="darkblue"></th>
-          <th class="darkblue not-bold" scope="col">Features</th>
-          <th class="darkblue not-bold" scope="col">Rating</th>
-          <th class="darkblue not-bold" scope="col">Price</th>
-        </tr>
-      </thead>
-      <tbody>
+      <div class="tablewrapper scrollable">
+        <table class="push-1-2">
+          <caption class="island-1-2 push-0 text-center not-italic">Details about our tried and tested programs.</caption>
 
-        <tr>
-          <th class="island-1-2 not-bold" scope="row">Email Marketing</th>
-          <td class="island-1-2">Engage specific customer demographics with relevant, triggered emails from an easy drag and drop interface.</td>
-          <td class="island-1-2">★★★</td>
-          <td class="island-1-2">$</td>
-        </tr>
+          <thead>
+            <tr>
+              <th class="darkblue" scope="col"></th>
+              <th class="darkblue not-bold" scope="col">Features</th>
+              <th class="darkblue not-bold" scope="col">Rating</th>
+              <th class="darkblue not-bold" scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
 
-        <tr>
-          <th class="island-1-2 not-bold" scope="row">Consumer Marketing</th>
-          <td class="island-1-2">Attract and engage audiences across channels with personalized audience experiences.</td>
-          <td class="island-1-2">★★★★</td>
-          <td class="island-1-2">$$</td>
-        </tr>
+            <tr>
+              <th class="island-1-2 not-bold" scope="row">Email Marketing</th>
+              <td class="island-1-2">Engage specific customer demographics with relevant, triggered emails from an easy drag and drop interface.</td>
+              <td class="island-1-2">★★★</td>
+              <td class="island-1-2">$</td>
+            </tr>
 
-        <tr>
-          <th class="island-1-2 not-bold" scope="row">Mobile Marketing</th>
-          <td class="island-1-2">Drive mobile application engagement in customers. Assess engagement with mobile app activity monitoring.</td>
-          <td class="island-1-2">★★★★★</td>
-          <td class="island-1-2">$$$</td>
-        </tr>
+            <tr>
+              <th class="island-1-2 not-bold" scope="row">Consumer Marketing</th>
+              <td class="island-1-2">Attract and engage audiences across channels with personalized audience experiences.</td>
+              <td class="island-1-2">★★★★</td>
+              <td class="island-1-2">$$</td>
+            </tr>
 
+            <tr>
+              <th class="island-1-2 not-bold" scope="row">Mobile Marketing</th>
+              <td class="island-1-2">Drive mobile application engagement in customers. Assess engagement with mobile app activity monitoring.</td>
+              <td class="island-1-2">★★★★★</td>
+              <td class="island-1-2">$$$</td>
+            </tr>
 
-      </tbody>
+          </tbody>
 
+        </table>
 
-    </table>
+        <!-- <div class="center-text push-1-2">
+        <button type="button" name="signup"><a href="pricing.html">View Prices</a></button>
+      </div> -->
 
-    <div class="center-text push-1-2">
-      <button type="button" name="signup"><a href="pricing.html">View Prices</a></button>
-    </div>
-
-  </div>
-
-  <div class="review-section">
-    <h2 class="push-0 giga text-center">Reviews</h2>
-
-
-    <section class="grid">
-
-      <div class="text-center unit unit-content-distribute unit-content-center review unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
-        <img class="i-192" src="images/review/stockman.png" alt="reviewer portrait">
-        <p class="bold push-1-4">Globo Chem</p>
-        <p class="cite center-text push-1-4 unit-m-1-2">After my company implemented Marketo, sales from Marketing campaigns have increased from 10% to 26%. I highly recommend it for any company.</p>
+      <div class="button-wrap center-flow center-text push-1-2">
+        <span><a class="btn" href="pricing.html">View Prices</a></span>
       </div>
 
-      <div class="text-center unit unit-content-distribute unit-content-center review unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
-        <img class="i-192" src="images/review/stockwoman.png" alt="reviewer portrait">
-        <p class="bold push-1-4 ">Cinco Brand</p>
-        <p class="cite center-text push-1-2 unit-m-1-2">Our company’s productivity has been increased by 900% through the use of Marketo software. Our campaign design and execution has gained incredible levels of efficiency.</p>
-      </div>
     </div>
 
-  </section>
+    <div class="review-section">
+      <h2 class="push-0 giga text-center">Reviews</h2>
+
+      <section class="grid">
+
+        <div class="text-center unit unit-content-distribute unit-content-center review unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
+          <img class="i-192" src="images/review/stockman.png" alt="reviewer portrait">
+          <p class="bold push-1-4">Globo Chem</p>
+          <p class="cite center-text push-1-4 unit-m-1-2">After my company implemented Marketo, sales from Marketing campaigns have increased from 10% to 26%. I highly recommend it for any company.</p>
+        </div>
+
+        <div class="text-center unit unit-content-distribute unit-content-center review unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
+          <img class="i-192" src="images/review/stockwoman.png" alt="reviewer portrait">
+          <p class="bold push-1-4 ">Cinco Brand</p>
+          <p class="cite center-text push-1-2 unit-m-1-2">Our company’s productivity has been increased by 900% through the use of Marketo software. Our campaign design and execution has gained incredible levels of efficiency.</p>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
 
   <footer class="grid gutter pad-t-1-2 pad-b-1-2">
     <div class="inline gutter-1-2 unit xs-1 s-1 m-1-2 footer-sm ">
@@ -125,7 +137,7 @@
     </div>
 
     <div class="footerpdiv footer-p push-none unit xs-1 s-1 m-1-2">
-      <p class="micro push-1-4">2018, Marketo Inc.</p>
+      <p class="micro push-1-4" role="contentinfo">2018, Marketo Inc.</p>
     </div>
 
   </footer>
