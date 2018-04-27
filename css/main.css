@@ -43,25 +43,12 @@ h2 {
   color: #716fb3;
 }
 
-/* .button-wrap {
-  position: relative;
-} */
-
 button, .btn {
   background-color: #716fb3;
   color: white;
   border-style: none;
   border-radius: 20px;
 
-  /* position: absolute;
-  bottom: -3em;
-  right: 23em; */
-  /*
-  position: absolute;
-  top: 140%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  */
 }
 
 a {
@@ -149,12 +136,6 @@ footer p {
   text-align: center;
 }
 
-/* 400px */
-
-/* @media only screen and (min-width: 25em) {
-
-} */
-
 /* 650px */
 
 @media only screen and (min-width: 38em) {
@@ -182,9 +163,3 @@ footer p {
   }
 
 }
-
-/*  1500px */
-
-/* @media only screen and (min-width: 90em) {
-
-} */
